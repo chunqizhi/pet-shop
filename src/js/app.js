@@ -71,7 +71,7 @@ App = {
 
   markAdopted: function() {
     var adoptionInstance;
-    App.contracts.Adoption.deploy().then(function (instance) {
+    App.contracts.Adoption.deployed().then(function (instance) {
       adoptionInstance = instance;
 
       // 调用合约得 getAdopters()，用 call 读取信息不需要消耗 gas
